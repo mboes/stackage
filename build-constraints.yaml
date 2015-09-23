@@ -117,20 +117,6 @@ packages:
         - th-desugar
         - quickcheck-assertions
 
-        # Cloud Haskell not yet updated to GHC 7.10
-        #- distributed-process-simplelocalnet
-        # cloud-haskell
-        #- rank1dynamic
-        #- distributed-static
-        - network-transport
-        #- distributed-process
-        #- distributed-process-extras
-        #- distributed-process-async
-        #- distributed-process-client-server
-        #- distributed-process-supervisor
-        #- distributed-process-task
-        #- distributed-process-execution
-
         - kure
 
         - ide-backend
@@ -1177,9 +1163,27 @@ packages:
         - nationstates
 
     "Mathieu Boespflug <mboes@tweag.net> @mboes":
-        # profunctors https://github.com/fpco/stackage/issues/590
         # netwire
         - th-lift
+
+        - distributed-process
+        - distributed-process-async
+        - distributed-process-client-server
+        - distributed-process-execution
+        - distributed-process-extras
+        - distributed-process-registry
+        - distributed-process-simplelocalnet
+        - distributed-process-supervisor
+        - distributed-process-task
+        - distributed-process-tests
+        - distributed-static
+        - network-transport
+        - network-transport-composed
+        - network-transport-inmemory
+        - network-transport-tcp
+        - network-transport-tests
+        - network-transport-benchmarks
+        - rank1dynamic
 
     "Christopher Reichert <creichert07@gmail.com> @creichert":
         - bencode
